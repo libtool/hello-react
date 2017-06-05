@@ -1,28 +1,16 @@
 import React, {Component} from 'react';
-
+import RegistrationForm from './RegistrationForm';
 import Header from './header';
+import Dropdowm from './Dropdown';
 
-const menu = [
-    {
-        link: '/articles',
-        label: 'Arcticles'
-    },
-    {
-        link: '/articles1',
-        label: 'Arcticles1'
-    },
-    {
-        link: '/articles2',
-        label: 'Arcticles2'
-    }
-]
+
 
 class App extends Component {
 
     render() {
         return (
             <div>
-                <Header item = {menu}/>
+              <RegistrationForm />
             </div>
         )
     }

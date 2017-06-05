@@ -9,6 +9,8 @@ class Dropdown extends Component {
         super(props);
 
         this.state = {isOpened: false};
+
+        this.toggleState = this.toggleState.bind(this)
     }
 
     toggleState(){
@@ -21,8 +23,8 @@ class Dropdown extends Component {
             dropdownText = <div>Здесть показывается текст</div>
         }
         return (
-            <div onClick={this.toggleState.bind(this)}>
-                Its dropdown body
+            <div onClick={this.toggleState}>
+                Its dropdown body1
                 {dropdownText}
             </div>
         )
